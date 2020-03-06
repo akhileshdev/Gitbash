@@ -1,1 +1,3 @@
 Hello Gitbash
+
+Adding 1st line using Gitbash notepad++
