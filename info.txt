@@ -4,4 +4,10 @@ Adding 1st line using Gitbash notepad++
 
 Adding 2nd line on branch1
 
+
 ++1st Addition on branch1
+
+Adding 3rd line on branch2
+
+++Branch2 addition
+
