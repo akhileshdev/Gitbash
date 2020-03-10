@@ -15,6 +15,8 @@ public class StringJoinerTest
 		System.out.println(sjoin);
 		
 		System.out.println("length : "+sjoin.length());
+		
+		System.out.println("Added on branch1");
 
 	}
 
