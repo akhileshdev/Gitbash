@@ -15,7 +15,12 @@ public class LambdaExpThread
 					 };
 	
          Thread th = new Thread(r);
-         th.start(); 		 				
+         th.start(); 
+         
+         Runnable r2 = ()->{System.out.println("Thread running using lambda expression")};
+         
+         Thread th1 = new Thread(r2);
+         th1.start();
 
 	}
 
