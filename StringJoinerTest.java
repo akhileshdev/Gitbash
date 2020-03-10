@@ -13,6 +13,8 @@ public class StringJoinerTest
 		sjoin.add("Shivraj");
 		
 		System.out.println(sjoin);
+		
+		System.out.println("length : "+sjoin.length());
 
 	}
 
