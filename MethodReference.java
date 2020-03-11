@@ -24,6 +24,8 @@ public class MethodReference
         
         Sayable ref1 = new MethodClass() :: saySomething;
         ref1.say();
+        
+        System.out.println("Method reference to Instance Method");
     	
     }
 }
