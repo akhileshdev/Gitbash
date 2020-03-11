@@ -11,7 +11,6 @@ class Message
 	 {
 	     System.out.println(msg);
 	 }
-
 }
 
 public class MessageReference
