@@ -53,7 +53,11 @@ class StreamExampleConvert2
     	  
     	  Set<String> set1 = list.stream().map(Product::getName).collect(Collectors.toSet());
     	  
+    	  Set<Float> set2 = list.stream().map(Product::getPrice).collect(Collectors.toSet());
+    	  
     	  System.out.println("Set of names : "+set1);
+    	  
+    	  System.out.println("set of prices : "+set2);
     	  
       }
 }
