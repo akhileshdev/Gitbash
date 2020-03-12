@@ -38,6 +38,10 @@ class StreamExample4
     	  System.out.println("Total price of al the phone : "+totalPrice);
     	  System.out.println("Total price of phones : "+totalPrice1);
     	  		  
+    	  double total3 = list.stream().collect(Collectors.summingDouble(prc->prc.price));
+    	  
+    	  System.out.println("Total Sum using Collectors class method : "+total3);
+    	  
 		  System.out.println("Stream Example with Stream API");
     	  
       }
