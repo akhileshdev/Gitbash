@@ -31,15 +31,13 @@ class StreamExample4
     	  list.add(new Product(5,"Oneplus",33000f));
     	  list.add(new Product(6,"IPhone",60000f));
     	  
-    	  float totalPrice = list.stream().map(prd->prd.price).reduce(0.0f,(sum,prc)->sum+prc);
-    	  
-    	  float totalPrice1 = list.stream().map(prd->prd.price).reduce(0.0f,Float::sum);
+    	  float totalPrice = list.stream().map(prd->prd.price).reduce(0.0f,(sum,prc)->sum+prc); //reduce method of stream API    	  
+    	  float totalPrice1 = list.stream().map(prd->prd.price).reduce(0.0f,Float::sum);    //using method reference of Float class concept
     	  
     	  System.out.println("Total price of al the phone : "+totalPrice);
     	  System.out.println("Total price of phones : "+totalPrice1);
     	  		  
-    	  double total3 = list.stream().collect(Collectors.summingDouble(prc->prc.price));
-    	  
+    	  double total3 = list.stream().collect(Collectors.summingDouble(prc->prc.price));   	  
     	  System.out.println("Total Sum using Collectors class method : "+total3);
     	  
 		  System.out.println("Stream Example with Stream API");
