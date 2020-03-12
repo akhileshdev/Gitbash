@@ -40,6 +40,11 @@ class StreamExample4
     	  double total3 = list.stream().collect(Collectors.summingDouble(prc->prc.price));   	  
     	  System.out.println("Total Sum using Collectors class method : "+total3);
     	  
+    	  
+    	  Product prdA = list.stream().max((prd1,prd2)->prd1.price > prd1.price ? 1:-1).get();
+    	  System.out.println("Maximum Price of product : "+prdA.name+" "+prdA.price);
+    	  
+    	  
 		  System.out.println("Stream Example with Stream API");
     	  
       }
