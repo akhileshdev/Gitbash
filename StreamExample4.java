@@ -44,7 +44,7 @@ class StreamExample4
     	  Product prdA = list.stream().max((prd1,prd2)->prd1.price > prd1.price ? 1:-1).get();
     	  System.out.println("Maximum Price of product : "+prdA.name+" "+prdA.price);
     	  
-    	  Product prdB = list.parallelStream().min((prd1,prd2)->prd1.price < prd1.price ? 1:-1).get();
+    	  Product prdB = list.stream().min((prd1,prd2)->prd1.price < prd1.price ? 1:-1).get();
     	  System.out.println("Minimum price of product : "+prdB.name+" "+prdB.price);
     	  
 		  System.out.println("Stream Example with Stream API");
