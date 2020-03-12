@@ -33,9 +33,12 @@ class StreamExample4
     	  
     	  float totalPrice = list.stream().map(prd->prd.price).reduce(0.0f,(sum,prc)->sum+prc);
     	  
+    	  float totalPrice1 = list.stream().map(prd->prd.price).reduce(0.0f,Float::sum);
+    	  
     	  System.out.println("Total price of al the phone : "+totalPrice);
+    	  System.out.println("Total price of phones : "+totalPrice1);
     	  		  
-		  System.out.println("Stream Example concise and compact code with Stream API");
+		  System.out.println("Stream Example with Stream API");
     	  
       }
 }
