@@ -47,6 +47,18 @@ class StreamExample4
     	  Product prdB = list.stream().min((prd1,prd2)->prd1.price < prd1.price ? 1:-1).get();
     	  System.out.println("Minimum price of product : "+prdB.name+" "+prdB.price);
     	  
+    	  
+    	  
+    	  //using count() method of stream API
+    	  
+    	  long count = list.stream().count();
+    	  
+    	  long count1 = list.stream().filter(p->p.price >30000f).count();
+    	  
+    	  System.out.println("Product count : "+count);
+    	  System.out.println("Count with price list : "+count1);
+    	  
+    	      	  
 		  System.out.println("Stream Example with Stream API");
     	  
       }
