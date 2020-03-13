@@ -17,6 +17,12 @@ class PredicateChain
     	System.out.println("Using predicate negation in Chaining : "+res);   	
     	System.out.println("Using predicate test() method : "+result);
     	
+    	
+    	boolean res1 = lowerThan.or(higherThan).test(10);
+    	System.out.println("Predicate Testing or() method");
+    	
+    	
+    	
     }
 
 }
