@@ -12,7 +12,10 @@ class PredicateChain
     	
     	Boolean result = lowerThan.and(higherThan).test(10);
     	
-    	System.out.println(result);
+    	boolean res = lowerThan.and(higherThan).negate().test(70);
+    	
+    	System.out.println("Using predicate negation in Chaining : "+res);   	
+    	System.out.println("Using predicate test() method : "+result);
     	
     }
 
