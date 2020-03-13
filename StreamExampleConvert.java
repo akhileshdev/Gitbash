@@ -48,7 +48,8 @@ class StreamExampleConvert
     	  List<String> list2 = list.stream().map(Product :: getName).collect(Collectors.toList());
     	  System.out.println(list2);
     	  
-    	  list.stream().map(pm->pm.name).forEach(System.out::println);
+    	  list.stream().map(pm->pm.name).forEach(System.out ::println);   //using println method of System class
+    	                                                                 //method reference example 
     	  
       }
 }
