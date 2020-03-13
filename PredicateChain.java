@@ -8,7 +8,7 @@ class PredicateChain
     {
     	
     	Predicate<Integer> lowerThan = i->i < 20;
-    	Predicate<Integer> higherThan = i->i > 5;
+    	Predicate<Integer> higherThan = i->i < 5;
     	
     	Boolean result = lowerThan.and(higherThan).test(10);
     	
@@ -19,7 +19,7 @@ class PredicateChain
     	
     	
     	boolean res1 = lowerThan.or(higherThan).test(10);
-    	System.out.println("Predicate Testing or() method");
+    	System.out.println("Predicate Testing or() method : "+res1);
     	
     	
     	
