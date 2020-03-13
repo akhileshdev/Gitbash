@@ -18,10 +18,14 @@ class PredicateChain
     	System.out.println("Using predicate test() method : "+result);
     	
     	
-    	boolean res1 = lowerThan.or(higherThan).test(2);
-    	System.out.println("Predicate Testing or() method : "+res1);
+    	boolean res1;
+    	for(int i = 0;i < 50;i++)
+    	{
+    	   res1 = lowerThan.or(higherThan).test(i);
+    	   System.out.println("Predicate Testing or() method : "+res1);
     	
-    	
+    	}
+       	
     	
     }
 
